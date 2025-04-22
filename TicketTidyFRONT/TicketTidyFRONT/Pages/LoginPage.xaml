@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout>
+        <Image
+            Source="fondo_splash.png"
+            Margin="30"/>
+
+        <Entry
+            x:Name="usernameEntry"
+            Placeholder="Nombre de usuario"
+            Keyboard="Text"
+            
+            Margin="30,10"/>
+        <Entry
+            x:Name="pswEntry"
+            Placeholder="Contraseña"
+            Keyboard="Text"
+            Margin="30,20"
+            IsPassword="True"/>
+
+        <ActivityIndicator IsRunning="{Binding loading}"/>
+
+        <Button
+            x:Name="logButton"
+            Text="Entrar"
+            Background="Black"
+            TextColor="White"
+            Clicked="logButton_Clicked"
+            Margin="100,40,100,100"/>
+
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Image
+                    Source="android_icon.png"
+                    HeightRequest="50"
+                    WidthRequest="50"/>
+
+                <Label
+                    Text="TicketTidy.net"
+                    FontSize="16"
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

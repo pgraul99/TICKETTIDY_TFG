@@ -1,0 +1,7 @@
+# Ignorar archivos de compilación de Android y .NET
+**/bin/
+**/obj/
+
+# Ignorar archivos temporales generados por Android
+TicketTidyFRONT/TicketTidyFRONT/obj/
+TicketTidyFRONT/TicketTidyFRONT/bin/

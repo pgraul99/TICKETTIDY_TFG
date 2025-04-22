@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesTecnico.IncidenciasPorFechaTecnico"
+             Title="INCIDENCIAS POR FECHA">
+
+    <Grid RowDefinitions="*,Auto">
+    <ScrollView Grid.Row="0">
+        <VerticalStackLayout>
+
+
+            <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <Grid ColumnDefinitions="*,2*,*">
+                    <Image Source="{Binding image}" Grid.Column="0"></Image>
+                    <Label Text="INCIDENCIAS POR FECHA" TextDecorations="Underline" TextColor="White"
+                     Grid.Column="1" VerticalOptions="CenterAndExpand" Margin="48,0"/>
+
+                    <Border Grid.Column="2" WidthRequest="100">
+                        <VerticalStackLayout>
+                            <Label Text="Fecha" TextColor="White" HorizontalOptions="Center" Padding="5"/>
+                            <Label Text="{Binding fecha}" TextColor="White" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,0,0,20">
+                <Image Source="infoicono.png" HeightRequest="25" WidthRequest="25">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                     NumberOfTapsRequired="1"
+                     Tapped="TapGestureRecognizer_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label x:Name="infoLabel" IsVisible="false" 
+                Text="Elige dos fechas y pulsa 'Buscar'" 
+                TextColor="CornflowerBlue"
+                FontSize="12" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <!--FECHA INCIO-->
+            
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,0,0,10">
+                <Grid ColumnDefinitions="Auto, Auto">
+                    <Label Margin="8,0,7,0" Text="Fecha inicio: " FontSize="18" VerticalOptions="Center" Grid.Column="0"
+                 FontAttributes="Bold"/>
+
+                    <Border Background="White" 
+                     Padding="5,0" 
+                     Margin="15,0,5,0"
+                     WidthRequest="165"
+                         HeightRequest="40"
+                     Stroke="Gray"
+                     StrokeThickness="1"
+                     StrokeShape="RoundRectangle 10" 
+                     Grid.Column="1">
+                        <HorizontalStackLayout>
+                            <DatePicker x:Name="pickerFechaIncio" WidthRequest="130" VerticalOptions="Center"
+                                Date="{Binding FechaCierre, Mode=TwoWay}"
+                                Format="dd/MM/yyyy"/>
+                            <Image Source="down_icono.png" HeightRequest="20" WidthRequest="20">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                 x:Name="pickerDesplegarFechaInicio"
+                                 NumberOfTapsRequired="1"
+                                 Tapped="pickerDesplegar_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </HorizontalStackLayout>
+                    </Border>
+
+                    
+
+                </Grid>
+            </HorizontalStackLayout>
+            
+            
+            <!--FECHA FINAL-->
+            
+            <HorizontalStackLayout HorizontalOptions="Center" Margin="0,0,0,30">
+                <Grid ColumnDefinitions="Auto, Auto, *">
+                    <Label Margin="8,0,15,0" Text="Fecha final: " FontSize="18" VerticalOptions="Center" Grid.Column="0"
+                    FontAttributes="Bold"/>
+
+                    <Border Background="White" 
+                         Padding="5,0" 
+                         Margin="15,0,5,0"
+                         WidthRequest="165"
+                             HeightRequest="40"
+                         Stroke="Gray"
+                         StrokeThickness="1"
+                         StrokeShape="RoundRectangle 10" 
+                         Grid.Column="1">
+                        <HorizontalStackLayout>
+                            <DatePicker x:Name="pickerFechaFin" WidthRequest="130" VerticalOptions="Center"
+                                Date="{Binding FechaCierre, Mode=TwoWay}"
+                                Format="dd/MM/yyyy"/>
+                            <Image Source="down_icono.png" HeightRequest="20" WidthRequest="20">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                         x:Name="pickerDesplegarFechaFin"
+                                         NumberOfTapsRequired="1"
+                                         Tapped="pickerDesplegar_Tapped_1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </HorizontalStackLayout>
+                    </Border>
+                
+                    
+
+                </Grid>
+            </HorizontalStackLayout>
+            
+            <!--BOTON BUSCAR-->
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Buscar" BackgroundColor="Black" FontAttributes="Bold" x:Name="buscarBtn"
+                        Clicked="buscarBtn_Clicked" Margin="0,0,0,0"/>
+            </HorizontalStackLayout>
+            
+            <!--CARGANDO INDICATOR-->
+
+                <ActivityIndicator IsRunning="{Binding loading}"/>
+
+            <!--LISTA INCIDENCIAS-->
+
+                <Border Background="LightGray" Margin="3,0,3,30" Padding="5" IsVisible="False" x:Name="listaBorder">
+                <CollectionView ItemsSource="{Binding Incidencias}">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="2"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="Beige" Margin="5">
+                                <Grid ColumnDefinitions="Auto, * ">
+                                    <Image Source="resolver_icon.png" Grid.Column="0" WidthRequest="50" Margin="0,0,5,0"/>
+
+                                    <VerticalStackLayout Grid.Column="1">
+
+                                        <Label Margin="0,10,0,0">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Id incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Id}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Fecha apertura: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding FechaApertura, StringFormat='{0:dd-MM-yyyy}'}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Descripción incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding DescripcionIncidencia}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Margin="0,0,0,10">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Tipo incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding TipoIncidencia}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+
+                                    </VerticalStackLayout>
+
+
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </Border>
+
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+        
+    </Grid>
+</ContentPage>

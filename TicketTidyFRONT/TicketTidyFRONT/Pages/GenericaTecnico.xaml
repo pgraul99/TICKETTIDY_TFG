@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.GenericaTecnico"
+             Title="GenericaTecnico">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
+
+            <!-- Imagen de bienvenida -->
+            <Image Source="obreros.jpg" 
+                   HeightRequest="200"
+                   HorizontalOptions="Center" 
+                   Aspect="AspectFit" />
+
+            <!-- Título -->
+            <Label Text="¡Bienvenido a TicketTidy!"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#2E86C1" />
+
+            <!-- Subtítulo -->
+            <Label Text="Responsabilidades del Técnico"
+                   FontSize="18"
+                   FontAttributes="Italic"
+                   TextColor="#333" />
+
+            <!-- Texto explicativo -->
+            <Label Text="Como técnico de soporte, tu responsabilidad es fundamental para el correcto funcionamiento del sistema. Esperamos de ti lo siguiente:"
+                   FontSize="16"
+                   TextColor="#444"
+                   LineHeight="1.4" />
+
+            <Label Text="• Resolver incidencias asignadas de forma eficaz y puntual."
+
+                   FontSize="15"
+                   TextColor="#444"
+                   LineHeight="1.5" />
+
+            <Label Text="• Ayudar a otros compañeros con sus problemas técnicos."
+                   FontSize="15"
+                   TextColor="#444"
+                   LineHeight="1.5" />
+
+            <Label Text="• Tratar con respeto al resto del equipo y cuidar el material."
+                   FontSize="15"
+                   TextColor="#444"
+                   LineHeight="1.5" />
+
+            <Label Text="• Hacer un uso responsable y profesional de la aplicación."
+                   FontSize="15"
+                   TextColor="#444"
+                   LineHeight="1.5" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

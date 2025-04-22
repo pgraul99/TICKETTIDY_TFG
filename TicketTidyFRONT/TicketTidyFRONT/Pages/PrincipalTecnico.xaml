@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<FlyoutPage     
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:TicketTidyFRONT.Pages"
+             xmlns:local="clr-namespace:TicketTidyFRONT"
+            x:Class="TicketTidyFRONT.Pages.PrincipalTecnico"
+                x:Name="flyoutPage"
+                Title="Menú Técnico">
+            
+    <FlyoutPage.Flyout>
+        <pages:MenuTecnico></pages:MenuTecnico>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <NavigationPage x:Name="Navigate">
+            <x:Arguments>
+                <pages:GenericaTecnico></pages:GenericaTecnico>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>
+    

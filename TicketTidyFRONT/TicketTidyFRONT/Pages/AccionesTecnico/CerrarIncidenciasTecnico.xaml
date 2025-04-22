@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicketTidyFRONT.Pages.AccionesTecnico.CerrarIncidenciasTecnico"
+             BackgroundColor="White"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout >
+            <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <Grid ColumnDefinitions="*,2*,*">
+                    <Image Source="crono_icon.png" Grid.Column="0"></Image>
+                    <Label Text="CIERRE DE INCIDENCIAS" TextDecorations="Underline" TextColor="White"
+                Grid.Column="1" VerticalOptions="CenterAndExpand" Margin="50,0"/>
+
+                    <Border Grid.Column="2" WidthRequest="100">
+                        <VerticalStackLayout>
+                            <Label Text="Fecha" TextColor="White" HorizontalOptions="Center" Padding="5"/>
+                            <Label Text="{Binding fecha}" TextColor="White" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+            </HorizontalStackLayout>
+
+
+            <Label Text="INCIDENCIA"
+               TextColor="Gray"
+               TextDecorations="Underline"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+            <Border Stroke="Black" StrokeThickness="1" BackgroundColor="DarkGray" Padding="15" Margin="5" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout>
+
+                    <!-- Datos generales -->
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Datos generales" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       ID:"  FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.Id}" WidthRequest="140" HeightRequest="30" BackgroundColor="White" 
+                                           />
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Fecha apertura:" FontAttributes="Bold" WidthRequest="160"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.FechaApertura, StringFormat='{0:dd-MM-yyyy}'}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Estado:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.Estado}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Detalles Técnicos -->
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Detalles técnicos" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Dispositivo:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.DispositivoId}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Descripción:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.DescripcionIncidencia}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Espacio:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.EspacioId}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Encargados -->
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Encargados" FontAttributes="Bold" Margin="0,0,0,5" TextColor="Gray" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Id gestor:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.GestorId}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Id usuario básico:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.UbasicoId}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Id técnico:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border>
+                                    <Label HorizontalTextAlignment="End" Padding="5" Text="{Binding incidenciaFront.TecnicoId}" WidthRequest="140" HeightRequest="30" BackgroundColor="White"/>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <!-- Datos a rellenar -->
+                    <Border Stroke="Gray" StrokeThickness="1" BackgroundColor="Beige" Margin="0,0,0,15" Padding="10" StrokeShape="RoundRectangle 5">
+                        <VerticalStackLayout>
+                            <Label Text="Datos a rellenar" FontAttributes="Bold" TextColor="Gray" Margin="0,0,0,5" TextDecorations="Underline"/>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Solución:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White" HeightRequest="40">
+                                    <Entry x:Name="lblSolucion" HorizontalTextAlignment="End" WidthRequest="140"></Entry>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Nuevo estado:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White" HeightRequest="40">
+                                    <Picker x:Name="pickerCierre" WidthRequest="140" SelectedIndex="0" VerticalOptions="Center">
+                                        <Picker.Items>
+                                            <x:String>Cierre total</x:String>
+                                            <x:String>Cierre parcial</x:String>
+                                            <x:String>Sin éxito</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Fecha cierre:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White" HeightRequest="40">
+                                    <DatePicker x:Name="pickerFecha" WidthRequest="140" VerticalOptions="Center"
+                                    Date="{Binding FechaCierre, Mode=TwoWay}"
+                                    Format="dd/MM/yyyy"/>
+                                </Border>
+                            </HorizontalStackLayout>
+
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Label Text="       Tipo incidencia:" FontAttributes="Bold" WidthRequest="160" VerticalOptions="Center"/>
+                                <Border BackgroundColor="White" HeightRequest="40">
+                                    <Picker x:Name="pickerTipoIncidencia" WidthRequest="140" SelectedItem="Eléctrico" VerticalOptions="Center">
+                                        <Picker.Items>
+                                            <x:String>Eléctrico</x:String>
+                                            <x:String>Electrónico</x:String>
+                                            <x:String>Hardware</x:String>
+                                            <x:String>Redes</x:String>
+                                            <x:String>Conexión</x:String>
+                                            <x:String>Impresoras</x:String>
+                                            <x:String>Seguridad</x:String>
+                                            <x:String>Fugas de Agua</x:String>
+                                            <x:String>Iluminación</x:String>
+                                            <x:String>Daños Mobiliario</x:String>
+                                            <x:String>Climatización</x:String>
+                                            <x:String>Accidente Laboral</x:String>
+                                            <x:String>Fallas en Alarma</x:String>
+                                            <x:String>Acceso al Sistema</x:String>
+                                            <x:String>Software</x:String>
+                                            <x:String>Inventarios</x:String>
+                                            <x:String>Comunicación</x:String>
+                                        </Picker.Items>
+                                    </Picker>
+                                </Border>
+                            </HorizontalStackLayout>
+                        </VerticalStackLayout>
+                    </Border>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <HorizontalStackLayout Margin="0,20" HorizontalOptions="Center" Spacing="130">
+                <Button Text="Volver" TextColor="White" x:Name="backBtn" Clicked="backBtn_Clicked"
+                        BackgroundColor="Black" WidthRequest="100"></Button>
+                
+                <Button Text="Guardar" TextColor="Black" FontAttributes="Bold" x:Name="saveBtn" Clicked="saveBtn_Clicked"
+                        BackgroundColor="Red" WidthRequest="100" ></Button>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Image
+            Source="android_icon.png"
+            HeightRequest="50"
+            WidthRequest="50"/>
+
+                    <Label
+            Text="TicketTidy.net"
+            FontSize="16"
+            VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

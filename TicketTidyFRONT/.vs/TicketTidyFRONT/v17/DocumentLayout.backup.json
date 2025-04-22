@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccionAsignarIncidencia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs*",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs*",
+              "ViewState": "AgIAALMAAAAAAAAAAAAuwLgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:55:19.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccionAsignarIncidencia.xaml",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAwJ0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-22T17:44:42.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CerrarIncidenciasTecnico.xaml",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-22T17:44:27.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CrearIncidencias.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAewIUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T09:07:23.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CrearIncidencias.xaml",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-18T08:24:42.694Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 264,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
