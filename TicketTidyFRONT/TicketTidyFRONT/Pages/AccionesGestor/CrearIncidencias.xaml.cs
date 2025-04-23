@@ -111,7 +111,7 @@ public partial class CrearIncidencias : ContentPage
 
                 if (response == 1)
                 {
-                    await DisplayAlert("Éxito", "Incidencia cerrada correctamente", "OK");
+                    await DisplayAlert("Éxito", "Incidencia creada correctamente", "OK");
                     await Navigation.PopAsync(); // Usamos await aquí también
                 }
                 else

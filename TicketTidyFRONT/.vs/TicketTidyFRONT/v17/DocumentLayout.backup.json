@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\incidenciasbytecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\incidenciasbytecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\accionasignarincidencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\incidenciasbytecnico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\incidenciasbytecnico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionesgestor\\crearincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|c:\\users\\pgrau\\onedrive\\documentos\\tickettidyfront\\tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC856208-0ADF-4E90-9EE7-BB1147952702}|TicketTidyFRONT\\TicketTidyFRONT.csproj|solutionrelative:tickettidyfront\\pages\\accionestecnico\\cerrarincidenciastecnico.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,67 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccionAsignarIncidencia.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs",
-              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs",
-              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs*",
-              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml.cs*",
-              "ViewState": "AgIAALMAAAAAAAAAAAAuwLgAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CerrarIncidenciasTecnico.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml.cs",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml.cs",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml.cs",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAIA7wDAAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T17:55:19.386Z",
+              "WhenOpened": "2025-04-23T17:58:53.389Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccionAsignarIncidencia.xaml",
-              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
-              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
-              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
-              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\AccionAsignarIncidencia.xaml",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAAwJ0AAAAoAAAAAAAAAA==",
+              "Title": "IncidenciasByTecnico.xaml",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-22T17:44:42.682Z",
+              "WhenOpened": "2025-04-23T17:31:25.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CerrarIncidenciasTecnico.xaml",
-              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
-              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
-              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
-              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesTecnico\\CerrarIncidenciasTecnico.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-22T17:44:27.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CrearIncidencias.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
-              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
-              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
-              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAewIUAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IncidenciasByTecnico.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml.cs",
+              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml.cs",
+              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml.cs",
+              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\IncidenciasByTecnico.xaml.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAYwHQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T09:07:23.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CrearIncidencias.xaml",
-              "DocumentMoniker": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
-              "RelativeDocumentMoniker": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
-              "ToolTip": "C:\\Users\\pgrau\\OneDrive\\Documentos\\TicketTidyFRONT\\TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
-              "RelativeToolTip": "TicketTidyFRONT\\Pages\\AccionesGestor\\CrearIncidencias.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-18T08:24:42.694Z",
+              "WhenOpened": "2025-04-23T17:19:25.783Z",
               "EditorCaption": ""
             }
           ]

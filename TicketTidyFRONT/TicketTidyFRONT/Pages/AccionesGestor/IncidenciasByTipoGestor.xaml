@@ -2,11 +2,181 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TicketTidyFRONT.Pages.AccionesGestor.IncidenciasByTipoGestor"
-             Title="IncidenciasByTipoGestor">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="INCIDENCIAS POR TIPO">
+    <ScrollView>
+        <VerticalStackLayout>
+
+
+            <HorizontalStackLayout Background="Black" HeightRequest="60" Margin="0,0,0,30">
+                <Grid ColumnDefinitions="*,2*,*">
+                    <Image Source="{Binding image}" Grid.Column="0"></Image>
+                    <Label Text="INCIDENCIAS POR TIPO" TextDecorations="Underline" TextColor="White"
+                    Grid.Column="1" VerticalOptions="CenterAndExpand" Margin="52,0"/>
+
+                    <Border Grid.Column="2" WidthRequest="100">
+                        <VerticalStackLayout>
+                            <Label Text="Fecha" TextColor="White" HorizontalOptions="Center" Padding="5"/>
+                            <Label Text="{Binding fecha}" TextColor="White" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Fill" Margin="0,0,0,10">
+                <Grid ColumnDefinitions="Auto, Auto, *">
+                    <Label Margin="8,0,15,0" Text="Tipo incidencia: " FontSize="18" VerticalOptions="Center" Grid.Column="0"
+                FontAttributes="Bold"/>
+
+                    <Border Background="White" 
+                    Padding="5,0" 
+                    Margin="15,0,5,0"
+                    WidthRequest="165"
+                        HeightRequest="40"
+                    Stroke="Gray"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10" 
+                    Grid.Column="1">
+                        <HorizontalStackLayout>
+                            <Picker HorizontalTextAlignment="End" x:Name="pickerTipoIncidencia"
+                                WidthRequest="125" SelectedIndex="0" VerticalOptions="Center">
+                                <Picker.Items>
+                                    <x:String>Eléctrico</x:String>
+                                    <x:String>Electrónico</x:String>
+                                    <x:String>Hardware</x:String>
+                                    <x:String>Redes</x:String>
+                                    <x:String>Conexión</x:String>
+                                    <x:String>Impresoras</x:String>
+                                    <x:String>Seguridad</x:String>
+                                    <x:String>Fugas de Agua</x:String>
+                                    <x:String>Iluminación</x:String>
+                                    <x:String>Daños Mobiliario</x:String>
+                                    <x:String>Climatización</x:String>
+                                    <x:String>Accidente Laboral</x:String>
+                                    <x:String>Fallas en Alarma</x:String>
+                                    <x:String>Acceso al Sistema</x:String>
+                                    <x:String>Software</x:String>
+                                    <x:String>Inventarios</x:String>
+                                    <x:String>Comunicación</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <Image Source="down_icono.png" HeightRequest="20" WidthRequest="20">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                x:Name="pickerDesplegar"
+                                NumberOfTapsRequired="1"
+                                Tapped="TapGestureRecognizer_Tapped" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </HorizontalStackLayout>
+                    </Border>
+
+                    <Border
+                    StrokeThickness="1"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 10"
+                    BackgroundColor="Gray"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    Margin="5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Grid.Column="2">
+
+                        <ImageButton
+                        x:Name="buscarBtn"
+                        Source="search_icono.png"
+                        Clicked="buscarBtn_Clicked"
+                        BackgroundColor="Transparent"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        Padding="0" />
+                    </Border>
+
+                </Grid>
+            </HorizontalStackLayout>
+
+            <BoxView BackgroundColor="DarkGray" HeightRequest="2" Margin="0,20,0,0"></BoxView>
+
+            <!--CARGANDO INDICATOR-->
+
+            <ActivityIndicator IsRunning="{Binding loading}"/>
+
+
+            <Border Background="LightGray" Margin="3">
+                <CollectionView ItemsSource="{Binding Incidencias}">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="2"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="Beige" Margin="5">
+                                <Grid ColumnDefinitions="Auto, * ">
+                                    <Image Source="resolver_icon.png" Grid.Column="0" WidthRequest="50" Margin="0,0,5,0"/>
+
+                                    <VerticalStackLayout Grid.Column="1">
+
+                                        <Label Margin="0,10,0,0">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Id incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding Id}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Fecha apertura: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding FechaApertura, StringFormat='{0:dd-MM-yyyy}'}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label >
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Descripción incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding DescripcionIncidencia}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label Margin="0,0,0,10">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="Tipo incidencia: " FontAttributes="Bold" />
+                                                    <Span Text="{Binding TipoIncidencia}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+
+                                    </VerticalStackLayout>
+
+
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </Border>
+
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false">
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Image
+                        Source="android_icon.png"
+                        HeightRequest="50"
+                        WidthRequest="50"/>
+
+                    <Label
+                        Text="TicketTidy.net"
+                        FontSize="16"
+                        VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
